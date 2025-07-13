@@ -2,9 +2,10 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
+RUN apt update && apt upgrade -y
+RUN apt install git -y 
 RUN pip install uv
-RUN uv init
-RUN uv add fastapi openai python-dotenv uvicorn 
+RUN git clone https://github.com/andrea-grandi/chatbot && cd chatbot && uv sync
 
 COPY . .
 
