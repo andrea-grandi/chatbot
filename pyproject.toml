@@ -10,6 +10,7 @@ dependencies = [
     "langchain-community>=0.3.27",
     "langchain-openai>=0.3.27",
     "libmagic>=1.0",
+    "markitdown[all]>=0.1.2",
     "openai>=1.95.1",
     "python-dotenv>=1.1.1",
     "python-magic>=0.4.27",
